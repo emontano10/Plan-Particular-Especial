@@ -157,6 +157,21 @@
     font-size: 13px
 }
 
+.btn-secondary {
+    background-color: #6c757d!important;
+    border: none!important;
+    border-radius: 32px;
+    padding: 13px 27px;
+    color: #fff;
+    font-weight: 400;
+    -webkit-box-shadow: 4.5px 7.794px 13px 0 #afc1ec;
+    box-shadow: 4.5px 7.794px 13px 0 #afc1ec;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+    font-size: 13px
+}
+
 .btn-primary:hover {
     background: #3c5eb3!important;
     border-color: #3c5eb3!important
@@ -764,14 +779,6 @@ a:focus {
     color: #5bc198
 }
 
-.banner1 {
-    background: url(../images/banner-2.jpg) center no-repeat;
-    background-size: cover
-}
-
-.banner1:focus {
-    outline: none
-}
 
 .cart-seperate {
     position: relative;
@@ -4170,10 +4177,6 @@ footer {
     }
 }
 
-.banner2 {
-    background: url(../images/banner-2.jpg) center 100% no-repeat;
-    background-size: cover
-}
 
 .blog-deatil h5 {
     font-weight: 400;

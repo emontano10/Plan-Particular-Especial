@@ -123,142 +123,190 @@
     </div>
     <!-- FORMULARIO  -->
     <div class="banner-slider">
-        <!-- FORM #1 -->
-        <div class="banner1">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-9 col-lg-5">
-                        <div class="main-title main-title-style2">
-                            <span>Clinica Imbanaco te ofrece esta gran oportunidad</span>
-                            <h1>
-                                Plan Particular Especial
-                            </h1>
-                            <p>
-                                Ahora puedes acceder a los servicios de la Clínica Imbanaco con precios especiales para
-                                ti y tus beneficiarios menores de 18 años sin ningún costo..
-                            </p>
-                            <a href="#" class="btn btn-primary">
-                               Ingresar
-                                <i class="fas fa-user"></i>
-                            </a>
-                        </div>
+        <!-- FORM #1 INFO DATA PLAN -->
+        <div >
+            <div class="row">
+                <div class="col-md-9 col-lg-5 ps-5">
+                    <div class="main-title main-title-style2">
+                        <span>Clinica Imbanaco te ofrece esta gran oportunidad</span>
+                        <h1>
+                            Plan Particular Especial
+                        </h1>
+                        <p>
+                            Ahora puedes acceder a los servicios de la Clínica Imbanaco con precios especiales para
+                            ti y tus beneficiarios menores de 18 años sin ningún costo..
+                        </p>
+                        <button class="btn btn-primary my-3">
+                            Ingresar
+                            <i class="fas fa-user"></i>
+                        </button>
                     </div>
+                </div>
+                <div class="col-7">
+                    <img 
+                        src="images/form/planparticularinfo.webp" 
+                        alt="plan particular"
+                        class="img-fluid"
+                    >
                 </div>
             </div>
         </div>
-        <!-- FORM #2 -->
-         <div class="banner1">
+        <!-- FORM #2 LOGIN -->
+         <div class="banner2">
             <div class="container">
                 <div class="row">
                     <div class="col-md-9 col-lg-5">
                         <div class="main-title main-title-style2">
                             <span>Inicia sessión o crea un usuario nuevo</span>
-                            <h1>
+                            <p class="fs-1">
                                 Validar Usuario
-                            </h1>
+                            </p>
                            <form>
-                               <div class="row gx-2 gy-4">
+                               <div class="row gx-2 gy-4 p-2">
                                     <div class="form-floating col-12 col-md-6">
-                                        <select class="form-select" id="nitTipo" required>
+                                        <select class="form-select" required>
                                             <option selected value=""></option>
                                             <option value="cc">CC - CÉDULA DE CIUDADANIA</option>
                                             <option value="ce">CE - CÉDULA EXTRANJERA</option>
-                                            <option value="pa">PSAPORTE</option>
+                                            <option value="pa">PASAPORTE</option>
                                         </select>
-                                        <label for="nit">Tipo de documento</label>
+                                        <label>Tipo de documento</label>
                                     </div>
                                     <div class="form-floating col-12 col-md-6">
-                                        <input type="text" class="form-control" id="nit" placeholder="Numero de documento" required>
-                                        <label for="nit">Numero de documento</label>
+                                        <input type="text" class="form-control" placeholder="Numero de documento" required>
+                                        <label>Numero de documento</label>
                                     </div>
                                     <div class="form-floating col-12 col-md-6">
-                                        <input type="email" class="form-control" id="nit" placeholder="Correo Electrónico" required>
-                                        <label for="nit">Correo Electrónico</label>
+                                        <input type="email" class="form-control" placeholder="Correo Electrónico" required>
+                                        <label>Correo Electrónico</label>
                                     </div>
                                     <div class="form-floating col-12 col-md-6">
-                                        <input type="text" class="form-control" id="nit" placeholder="Celular" required>
-                                        <label for="nit">Celular</label>
+                                        <input type="text" class="form-control" placeholder="Celular" required>
+                                        <label>Celular</label>
                                     </div>
+                                    <div id="pin" class="d-none form-floating col-12 col-md-6">
+                                        <input type="text" class="form-control" placeholder="Validar" required>
+                                        <label>Validar</label>
+                                    </div>  
+                                    <div id="btnValidar" class="col-12 col-md-6 d-flex align-items-center">
+                                        <button                                            
+                                            type="button" 
+                                            class="btn btn-primary"
+                                            data-bs-toggle="modal"
+                                            data-bs-target="#exampleModal"
+                                            tabindex="0">
+                                            Login
+                                            <i class="fas fa-badge-check"></i>
+                                        </button>
+                                    </div> 
                                </div>                             
-                           </form>
-                            <a href="#" class="btn btn-primary mt-4" tabindex="0">
-                                Validar
-                                <i class="fas fa-badge-check"></i>
-                            </a>
+                           </form>                                                     
                         </div>
+                    </div>
+                    <div class="col-7">
+                        <img src="images/form/login.webp" class="img-fluid" alt="plan particular">
                     </div>
                 </div>
             </div>
         </div>
-        <!-- FORM #3 -->
-        <div class="banner1">
+        <!-- FORM #3  DATA TITULAR-->
+        <div class="banner3">
             <div class="container">
                 <div class="row">
                     <div class="col-md-9 col-lg-5">
                         <div class="main-title main-title-style2">
-                            <span>Clinica Imbanaco te ofrece esta gran oportunidad</span>
-                            <h1>
-                                Plan Particular Especial
-                            </h1>
-                            <p>
-                                Ahora puedes acceder a los servicios de la Clínica Imbanaco con precios especiales para
-                                ti y tus beneficiarios menores de 18 años sin ningún costo..
-                            </p>
-                            <a href="#" class="btn btn-primary" tabindex="0">
-                                Ingresar
-                                <i class="fas fa-arrow-circle-down mx-1"></i>
-                            </a>
+                            <b>Información de la cuenta</b>
+                           <form>
+                               <div class="row gx-2 gy-4 p-2">
+                                    <div class="form-floating col-12 col-md-6">
+                                        <input 
+                                            value="CC - CEDULA DE CIUDADANIA" 
+                                            type="text" 
+                                            class="form-control" 
+                                            required
+                                        >
+                                        <label>Tipo de documento</label>
+                                    </div>
+                                    <div class="form-floating col-12 col-md-6">
+                                        <input 
+                                            value="1107512506" 
+                                            type="text" 
+                                            class="form-control" 
+                                            required
+                                        >
+                                        <label>Numero de documento</label>
+                                    </div>
+                                    <div class="form-floating col-12 col-md-6">
+                                        <input type="text" class="form-control"  required>
+                                        <label>Primer Nombre</label>
+                                    </div>
+                                    <div class="form-floating col-12 col-md-6">
+                                        <input type="text" class="form-control" required>
+                                        <label>Segundo Nombre</label>
+                                    </div>
+                                    <div class="form-floating col-12 col-md-6">
+                                        <input type="text" class="form-control" required>
+                                        <label>Primer Apellido</label>
+                                    </div>
+                                    <div class="form-floating col-12 col-md-6">
+                                        <input type="text" class="form-control" required>
+                                        <label>Segundo Apellido</label>
+                                    </div>
+                                    <div class="form-floating col-12 col-md-6">
+                                        <input type="date" class="form-control" required>
+                                        <label>Fecha Nacimiento</label>
+                                    </div>
+                                    <div class="form-floating col-12 col-md-6">
+                                        <select class="form-select" required>
+                                            <option selected value=""></option>
+                                            <option value="cc">Valle del cauca</option>
+                                            <option value="ce">Amazonas</option>
+                                            <option value="pa">Arauca</option>
+                                        </select>
+                                        <label>Departamento</label>
+                                    </div>
+                                    <div class="form-floating col-12 col-md-6">
+                                        <select class="form-select" required>
+                                            <option selected value=""></option>
+                                            <option value="cc">Cali</option>
+                                            <option value="ce">Medellin</option>
+                                            <option value="pa">Bogota</option>
+                                        </select>
+                                        <label>Ciudad</label>
+                                    </div>         
+                                    <div class="form-floating col-12 col-md-6">
+                                        <input type="text" class="form-control" required>
+                                        <label>Direección Residencia</label>
+                                    </div>      
+                                    <div class="form-floating col-12 col-md-6">
+                                        <input type="email" class="form-control" required>
+                                        <label>Correo Electrónico</label>
+                                    </div>      
+                                    <div class="form-floating col-12 col-md-6">
+                                        <input type="text" class="form-control" required>
+                                        <label>Celular</label>
+                                    </div>                   
+                                    <div id="btnValidar" class="col-12 col-md-6 d-flex align-items-center">
+                                        <button                                            
+                                            type="button" 
+                                            class="btn btn-primary"
+                                            data-bs-toggle="modal"
+                                            data-bs-target="#exampleModal"
+                                            tabindex="0">
+                                            Continuar
+                                            <i class="fas fa-badge-check"></i>
+                                        </button>
+                                    </div> 
+                               </div>                             
+                           </form>                                                     
                         </div>
+                    </div>
+                    <div class="col-7">
+                        <img src="images/form/datosusuario.webp" class="img-fluid" alt="plan particular">
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- FORM #4 -->
-        <div class="banner1">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-9 col-lg-5">
-                        <div class="main-title main-title-style2">
-                            <span>Clinica Imbanaco te ofrece esta gran oportunidad</span>
-                            <h1>
-                                Plan Particular Especial
-                            </h1>
-                            <p>
-                                Ahora puedes acceder a los servicios de la Clínica Imbanaco con precios especiales para
-                                ti y tus beneficiarios menores de 18 años sin ningún costo..
-                            </p>
-                            <a href="#" class="btn btn-primary" tabindex="0">
-                                Ingresar
-                                <i class="fas fa-arrow-circle-down mx-1"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-           <!-- FORM #5 -->
-        <div class="banner1">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-9 col-lg-5">
-                        <div class="main-title main-title-style2">
-                            <span>Clinica Imbanaco te ofrece esta gran oportunidad</span>
-                            <h1>
-                                Plan Particular Especial
-                            </h1>
-                            <p>
-                                Ahora puedes acceder a los servicios de la Clínica Imbanaco con precios especiales para
-                                ti y tus beneficiarios menores de 18 años sin ningún costo..
-                            </p>
-                            <a href="#" class="btn btn-primary" tabindex="0">
-                                Ingresar
-                                <i class="fas fa-arrow-circle-down mx-1"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        </div>      
     </div>
 
 
@@ -612,7 +660,7 @@
     <footer>
         <div class="container container-custom">
             <div class="row">
-                <!-- <div class="col-sm-12 col-md-12 col-lg-4">
+                <div class="col-sm-12 col-md-12 col-lg-4">
                     <div class="foot-contact-block">
                         <img src="images/foot-logo.png" class="img-fluid" alt="#" />
                         <p>
@@ -704,7 +752,7 @@
                         </ul>
                     </div>
                 </div>
-            </div> -->
+            </div>
             <div class="row">
                 <div class="col-md-12">
                     <div class="copyright">
@@ -716,12 +764,34 @@
         </div>
     </footer>
 
+    <!-- MODAL -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Codigo de validacoón</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+               Señor usuario usted ya se encuentra registrado en el Plan Particular Especial, si desea actualizar
+               la información; al dar Aceptar le enviaremos un código de confirmación a su celular o correo 
+               electrónico registrado con nosotros.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+              <button id="aceptarLogin" type="button" class="btn btn-primary" data-bs-dismiss="modal">Aceptar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/jquery.magnific-popup.min.js"></script>
     <script src="js/script.js"></script>
+    <script defer src="js/index.js"></script>
 </body>
 
 </html>
