@@ -127,7 +127,7 @@
         <!-- FORM #1 INFO DATA PLAN -->
         <div >
             <div class="row">
-                <div class="col-md-9 col-lg-5 ps-5">
+                <div class="col-md-9 col-lg-6 ps-5">
                     <div class="main-title main-title-style2">
                         <span>Clinica Imbanaco te ofrece esta gran oportunidad</span>
                         <h1>
@@ -143,24 +143,18 @@
                         </button>
                     </div>
                 </div>
-                <div class="col-7">
-                    <img 
-                        src="images/form/planparticularinfo.webp" 
-                        alt="plan particular"
-                        class="img-fluid"
-                    >
+                <div class="col-6">
+                    <img src="images/form/planparticularinfo.webp" alt="plan particular" class="img-fluid">
                 </div>
             </div>
         </div>
         <!-- FORM #2 LOGIN -->
-         <div class="banner2">
+         <div>
             <div class="row">
-                <div class="col-md-9 col-lg-5 ps-5">
+                <div class="col-md-9 col-lg-6 ps-5">
                     <div class="main-title main-title-style2">
                         <span>Inicia sessión o crea un usuario nuevo</span>
-                        <p class="fs-1">
-                            Validar Usuario
-                        </p>
+                        <p class="fs-1">Validar Usuario</p>
                         <form>
                             <div class="row gx-2 gy-4 p-2">
                                 <div class="form-floating col-12 col-md-6">
@@ -204,15 +198,15 @@
                         </form>                                                     
                     </div>
                 </div>
-                <div class="col-7">
+                <div class="col-6">
                     <img src="images/form/login.webp" class="img-fluid" alt="plan particular">
                 </div>
             </div>
         </div>
         <!-- FORM #3  DATA TITULAR-->
-        <div class="banner3">
+        <div>
             <div class="row">
-                <div class="col-md-9 col-lg-5 ps-5">
+                <div class="col-md-9 col-lg-6 ps-5">
                     <div class="my-4">
                         <b>Información de la cuenta</b>
                         <form>
@@ -235,27 +229,27 @@
                                     >
                                     <label>Numero de documento</label>
                                 </div>
-                                <div class="form-floating col-12 col-md-6">
+                                <div class="form-floating col-12 col-md-4">
                                     <input type="text" class="form-control"  required>
                                     <label>Primer Nombre</label>
                                 </div>
-                                <div class="form-floating col-12 col-md-6">
+                                <div class="form-floating col-12 col-md-4">
                                     <input type="text" class="form-control" required>
                                     <label>Segundo Nombre</label>
                                 </div>
-                                <div class="form-floating col-12 col-md-6">
+                                <div class="form-floating col-12 col-md-4">
                                     <input type="text" class="form-control" required>
                                     <label>Primer Apellido</label>
                                 </div>
-                                <div class="form-floating col-12 col-md-6">
+                                <div class="form-floating col-12 col-md-4">
                                     <input type="text" class="form-control" required>
                                     <label>Segundo Apellido</label>
                                 </div>
-                                <div class="form-floating col-12 col-md-6">
+                                <div class="form-floating col-12 col-md-4">
                                     <input type="date" class="form-control" required>
                                     <label>Fecha Nacimiento</label>
                                 </div>
-                                <div class="form-floating col-12 col-md-6">
+                                <div class="form-floating col-12 col-md-4">
                                     <select class="form-select" required>
                                         <option selected value=""></option>
                                         <option value="cc">Valle del cauca</option>
@@ -288,17 +282,13 @@
                                 <div class="col-12 col-md-6 d-flex align-items-center">
                                     <div class="form-check form-switch">
                                         <input class="form-check-input" type="checkbox">
-                                        <label data-bs-toggle="modal" data-bs-target="#modalPolitica"> 
+                                        <label class="c-pointer" data-bs-toggle="modal" data-bs-target="#modalPolitica"> 
                                             Acepto Politica y Privacidad 
                                         </label>
                                     </div>
                                 </div>                
                                 <div class="col-12 col-md-6 d-flex align-items-center justify-content-center">
-                                    <button                                            
-                                        type="button" 
-                                        class="btn btn-primary"
-                                        tabindex="0"
-                                    >
+                                    <button id="updateUser" type="button" class="btn btn-primary" tabindex="0">
                                         Continuar
                                         <i class="fas fa-save"></i>
                                     </button>
@@ -307,8 +297,155 @@
                         </form>                                                     
                     </div>
                 </div>
-                <div class="col-7">
+                <div class="col-6">
                     <img src="images/form/datosusuario.webp" class="img-fluid" alt="plan particular">
+                </div>
+            </div>
+        </div>      
+        <!-- FORM #4  BENEFICIARIOS-->
+        <div>
+            <div class="row">
+                <div class="col-md-9 col-lg-6 ps-5">
+                    <div class="my-4">
+                        <b>Beneficiarios (Menores de 18 años)</b>
+                        <form id="formBeneficiarios">
+                            <div class="row gx-2 gy-2 my-2">
+                                <div class="form-floating col-12 col-md-6">
+                                    <select class="form-select" required>
+                                        <option selected value=""></option>
+                                        <option value="cc">CC - CÉDULA DE CIUDADANIA</option>
+                                        <option value="ce">CE - CÉDULA EXTRANJERA</option>
+                                        <option value="pa">PASAPORTE</option>
+                                    </select>
+                                    <label>Tipo de documento</label>
+                                </div>
+                                <div class="form-floating col-12 col-md-6">
+                                    <input 
+                                        value="" 
+                                        type="text" 
+                                        class="form-control" 
+                                        required
+                                    >
+                                    <label>Numero de documento</label>
+                                </div>
+                                <div class="form-floating col-12 col-md-4">
+                                    <input type="text" class="form-control"  required>
+                                    <label>Primer Nombre</label>
+                                </div>
+                                <div class="form-floating col-12 col-md-4">
+                                    <input type="text" class="form-control" required>
+                                    <label>Segundo Nombre</label>
+                                </div>
+                                <div class="form-floating col-12 col-md-4">
+                                    <input type="text" class="form-control" required>
+                                    <label>Primer Apellido</label>
+                                </div>
+                                <div class="form-floating col-12 col-md-4">
+                                    <input type="text" class="form-control" required>
+                                    <label>Segundo Apellido</label>
+                                </div>
+                                <div class="form-floating col-12 col-md-4">
+                                    <input type="date" class="form-control" required>
+                                    <label>Fecha Nacimiento</label>
+                                </div>
+                                <div class="form-floating col-12 col-md-4">
+                                    <select class="form-select" required>
+                                        <option selected value=""></option>
+                                        <option value="cc">Valle del cauca</option>
+                                        <option value="ce">Amazonas</option>
+                                        <option value="pa">Arauca</option>
+                                    </select>
+                                    <label>Departamento</label>
+                                </div>
+                                <div class="form-floating col-12 col-md-6">
+                                    <select class="form-select" required>
+                                        <option selected value=""></option>
+                                        <option value="cc">Cali</option>
+                                        <option value="ce">Medellin</option>
+                                        <option value="pa">Bogota</option>
+                                    </select>
+                                    <label>Ciudad</label>
+                                </div>         
+                                <div class="form-floating col-12 col-md-6">
+                                    <input type="text" class="form-control" required>
+                                    <label>Direección Residencia</label>
+                                </div>      
+                                <div class="form-floating col-12 col-md-6">
+                                    <input type="email" class="form-control" required>
+                                    <label>Correo Electrónico</label>
+                                </div>      
+                                <div class="form-floating col-12 col-md-6">
+                                    <input type="text" class="form-control" required>
+                                    <label>Celular</label>
+                                </div>              
+                                <div class="col-12">
+                                    <button id="añadirBeneficiario" type="button" class="btn btn-primary">
+                                        Añadir
+                                        <i class="fas fa-user-plus"></i>
+                                    </button>
+                                    <button                                                                                 
+                                        type="button" 
+                                        class="btn btn-primary mx-2"
+                                        data-bs-toggle="modal"
+                                        data-bs-target="#beneficiarios"
+                                        tabindex="0"
+                                    >
+                                        Consultar
+                                        <i class="fas fa-search"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-primary">
+                                        Continuar
+                                        <i class="fas fa-badge-check"></i>
+                                    </button>
+                                </div> 
+                            </div>                             
+                        </form>                                      
+                    </div>
+                </div>
+                <div class="col-6">
+                    <img src="images/form/beneficiarios.webp" class="img-fluid" alt="plan particular">
+                </div>
+            </div>
+        </div>      
+        <!-- FORM #5 INVITACION-->
+        <div>
+            <div class="row">
+                <div class="col-md-9 col-lg-6 ps-5">
+                    <div class="main-title main-title-style2">
+                        <b>Le gustaria invitar a un amigo, conocido o familiar al Plan Particular Especial</b>
+                        <p class="fs-1">Enviar Invitación</p>
+                        <form id="formInvitacion">
+                            <div class="row gx-3 gy-4 my-2">
+                                <div class="form-floating col-12">
+                                    <div class="form-floating col-md-6">
+                                        <input type="text" class="form-control" placeholder="Nombre" required>
+                                        <label>Nombre</label>
+                                    </div>      
+                                </div>      
+                                <div class="form-floating col-12 col-md-6">
+                                    <div class="form-floating">
+                                        <input type="email" class="form-control" placeholder="Correo">
+                                        <label>Correo</label>
+                                    </div>      
+                                </div> 
+                                <div class="form-floating col-12 col-md-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" placeholder="Celular">
+                                        <label>Celular</label>
+                                    </div>      
+                                </div>       
+                                <div class="col-12">                              
+                                    <button type="submit" class="btn btn-primary">
+                                        Enviar
+                                        <i class="fas fa-envelope"></i>
+                                    </button>
+                                </div> 
+                            </div>                             
+                        </form>                                      
+                    </div>
+                </div>
+                <div class="col-6">
+                    <img src="images/form/beneficiarios.webp" class="img-fluid" alt="plan particular">
                 </div>
             </div>
         </div>      
@@ -683,7 +820,7 @@
 
 
     <a href="#" id="scroll" class="scroll-up"><i class="fas fa-angle-double-up"></i></a>
-
+    <div id="loading" class="loader d-none"></div>
     <!-- MODAL PIN -->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
@@ -700,6 +837,78 @@
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
               <button id="aceptarLogin" type="button" class="btn btn-primary" data-bs-dismiss="modal">Aceptar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!-- MODAL Beneficiarios -->
+    <div class="modal fade" id="beneficiarios" tabindex="-1" aria-labelledby="beneficiariosLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="ebeneficiariosLabel">Gestionar Beneficiarios</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <table class="table table-bordered text-center">
+                    <thead>
+                        <tr class="table-primary">
+                            <th scope="col">#</th>
+                            <th scope="col">SELECCIONAR</th>
+                            <th scope="col">DOCUMENTO</th>
+                            <th scope="col">NOMBRE DEL BENEFICIARIO</th>
+                            <th scope="col">ESTADO</th>
+                        </tr>  
+                    </thead>
+                    <tbody>
+                        <tr id="tr1">
+                            <th scope="row">1</th>
+                            <th><i onclick="SelectBeneficiario(1)" class="fas fa-check-circle text-primary c-pointer"></i></th>
+                            <td>1107512506</td>
+                            <td>NICOLÁS CHAMORRO GIRÓN</td>
+                            <td class="d-flex justify-content-center">
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input" type="checkbox">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr id="tr2">
+                            <th scope="row">2</th>
+                            <th><i onclick="SelectBeneficiario(2)" class="fas fa-check-circle text-primary c-pointer"></i></th>
+                            <td>164482658</td>
+                            <td>HICKLER MUSMELL LOGIN</td>
+                            <td class="d-flex justify-content-center">
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input" type="checkbox" checked>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr id="tr3">
+                            <th scope="row">3</th>
+                            <th><i onclick="SelectBeneficiario(3)" class="fas fa-check-circle text-primary c-pointer"></i></th>
+                            <td>97092823400</td>
+                            <td>CAMILA SILVA RUIZ</td>
+                            <td class="d-flex justify-content-center">
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input" type="checkbox" checked>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+            </table>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                <button 
+                    id="btnAceptarBeneficiario" 
+                    type="button" 
+                    class="btn btn-primary" 
+                    data-bs-dismiss="modal"
+                    disabled
+                    >
+                    Aceptar
+                </button>
             </div>
           </div>
         </div>
@@ -799,6 +1008,7 @@
     <script src="js/slick.min.js"></script>
     <script src="js/jquery.magnific-popup.min.js"></script>
     <script src="js/script.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script defer src="js/index.js"></script>
 </body>
 
