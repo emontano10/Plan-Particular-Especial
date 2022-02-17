@@ -1,4 +1,4 @@
-const butoonLogin = document.getElementById('aceptarLogin');
+const buttonLogin = document.getElementById('aceptarLogin');
 const añadirBeneficiario = document.getElementById('añadirBeneficiario');
 const formBeneficiarios = document.getElementById('formBeneficiarios');
 const btnUpdateUser = document.getElementById('updateUser');
@@ -6,11 +6,11 @@ const btnAceptarBeneficiario = document.getElementById('btnAceptarBeneficiario')
 const formInvitacion = document.getElementById('formInvitacion')
 
 let beneficiario = false;
-let accion;
+let accion = '';
 
 const HandleValidateLogin = () => {
     if (accion == 'pin') {
-        
+        $('#banenerForm').slick('slickNext');        
     } else {
         const containerPin = document.getElementById('pin');
         const containerbtnValidar = document.getElementById('btnValidar');
@@ -19,8 +19,9 @@ const HandleValidateLogin = () => {
         containerPin.className = 'form-floating col-12 col-md-6';  //remove d-none
         containerbtnValidar.className += ' justify-content-center';  // lo centra
         btnValidar.innerHTML = `Validar  <i class="fad fa-lock-alt"></i>`
-        btnValidar.removeAttribute('data-bs-toggle') // remove accion modal
-        btnValidar.removeAttribute('data-bs-target')
+        btnValidar.removeAttribute('data-bs-toggle'); // remove accion modal
+        btnValidar.removeAttribute('data-bs-target');
+        btnValidar.addEventListener('click' , HandleValidateLogin)
     
         accion = 'pin';
     }
@@ -104,7 +105,7 @@ const HandleSendInvitation = () => {
 }
 
 
-butoonLogin.addEventListener('click',  HandleValidateLogin);
+buttonLogin.addEventListener('click',  HandleValidateLogin);
 añadirBeneficiario.addEventListener('click', () => SaveBeneficiario('Realizado con exito'));
 btnUpdateUser.addEventListener('click', () => SaveBeneficiario('Se actualizo'));
 btnAceptarBeneficiario.addEventListener('click', UpdateBeneficiario)

@@ -863,7 +863,7 @@ a:focus {
 @media(max-width: 768px) {
     .main-slider-social {
         display:none
-    }
+    }    
 }
 
 .main-slider-social li {

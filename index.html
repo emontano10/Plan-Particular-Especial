@@ -58,9 +58,15 @@
             <div class="row">
                 <div class="col-md-12">
                     <nav class="navbar navbar-expand-lg navbar-light">
-                        <button class="navbar-toggler" type="button" data-toggle="collapse"
-                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                            aria-expanded="false" aria-label="Toggle navigation">
+                        <button 
+                            class="navbar-toggler" 
+                            type="button" 
+                            data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" 
+                            aria-controls="navbarSupportedContent"
+                            aria-expanded="false" 
+                            aria-label="Toggle navigation"
+                        >
                             <span class="navbar-toggler-icon"></span>
                         </button>
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -124,7 +130,7 @@
         </div>
     </div>
     <!-- FORMULARIO  -->
-    <div class="banner-slider">
+    <div id="banenerForm" class="banner-slider">
         <!-- FORM #1 INFO DATA PLAN -->
         <div >
             <div class="row">
@@ -138,10 +144,10 @@
                             Ahora puedes acceder a los servicios de la Clínica Imbanaco con precios especiales para
                             ti y tus beneficiarios menores de 18 años sin ningún costo..
                         </p>
-                        <button class="btn btn-primary my-3">
+                        <button id="ingresar" class="btn btn-primary my-3">
                             Ingresar
                             <i class="fas fa-user"></i>
-                        </button>
+                        </button>                        
                     </div>
                 </div>
                 <div class="col-6">
@@ -208,7 +214,7 @@
         <div>
             <div class="row">
                 <div class="col-md-9 col-lg-6 ps-5">
-                    <div class="my-4">
+                    <div class="my-2">
                         <b>Información de la cuenta</b>
                         <form>
                             <div class="row gx-2 gy-2 my-2">
@@ -288,10 +294,14 @@
                                         </label>
                                     </div>
                                 </div>                
-                                <div class="col-12 col-md-6 d-flex align-items-center justify-content-center">
+                                <div class="col-12 col-md-6 d-flex align-items-center justify-content-evenly">
                                     <button id="updateUser" type="button" class="btn btn-primary" tabindex="0">
-                                        Continuar
+                                        Guardar
                                         <i class="fas fa-save"></i>
+                                    </button>
+                                    <button id="continuarUserData" type="button" class="btn btn-primary" tabindex="0">
+                                        Continuar
+                                        <i class="fas fa-badge-check"></i>
                                     </button>
                                 </div> 
                             </div>                             
@@ -394,7 +404,7 @@
                                         Consultar
                                         <i class="fas fa-search"></i>
                                     </button>
-                                    <button type="button" class="btn btn-primary">
+                                    <button id="nextBeneficiarios" type="button" class="btn btn-primary">
                                         Continuar
                                         <i class="fas fa-badge-check"></i>
                                     </button>
@@ -446,7 +456,7 @@
                     </div>
                 </div>
                 <div class="col-6">
-                    <img src="images/form/beneficiarios.webp" class="img-fluid" alt="plan particular">
+                    <img src="images/form/Invitacion.webp" class="img-fluid" alt="plan particular">
                 </div>
             </div>
         </div>      
@@ -546,7 +556,7 @@
     <!-- SERVICES -->
     <section class="space">
         <div class="container container-custom">
-            <div class="row">
+            <div class="row w-100">
                 <div class="col-md-12">
                     <div class="heading-style1">
                         <span>Nuestros Servicios</span>
@@ -901,6 +911,7 @@
 
     <a href="#" id="scroll" class="scroll-up"><i class="fas fa-angle-double-up"></i></a>
     <div id="loading" class="loader d-none"></div>
+
     <!-- MODAL PIN -->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
