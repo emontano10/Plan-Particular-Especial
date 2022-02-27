@@ -16,8 +16,8 @@ if($bannerSlider.length&&$.fn.slick){
         dots:true,
         touchMove:false,
         touchThreshold: 0,
-        vertical:true,
-        verticalSwiping:true,
+        vertical:false,
+        verticalSwiping:false,
         infinite:false,
         autoplay:false, 
         autoplaySpeed:1000, 
@@ -25,6 +25,7 @@ if($bannerSlider.length&&$.fn.slick){
             breakpoint:768,settings:{
                 vertical:false,
                 verticalSwiping:false,
+                adaptiveHeight: true
             },
         }],
     });

@@ -933,10 +933,6 @@ a:focus {
     font-size: 13px
 }
 
-.fluid-logo {
-    float: right;
-    padding: 10px 0
-}
 
 .main-slider {
     position: relative
@@ -4553,6 +4549,21 @@ footer {
 .c-pointer {
     cursor: pointer;
 }
+
+
+/* CELULARES */
+@media(max-width: 549px) {
+    .fluid-sm-logo {
+        float: right;
+        padding: 10px 0;
+        height: 95px;
+    }
+    .my-xs-1{
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+}
+
 
 /* SPPINER */
 .loader {

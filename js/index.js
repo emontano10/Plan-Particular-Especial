@@ -2,9 +2,10 @@ const buttonLogin = document.getElementById('aceptarLogin');
 const añadirBeneficiario = document.getElementById('añadirBeneficiario');
 const formBeneficiarios = document.getElementById('formBeneficiarios');
 const btnUpdateUser = document.getElementById('updateUser');
-const formInvitacion = document.getElementById('formInvitacion')
-const getBeneficiarios = document.getElementById('getBeneficiarios')
-// const btnAceptarBeneficiario = document.getElementById('btnAceptarBeneficiario')
+const formInvitacion = document.getElementById('formInvitacion');
+const getBeneficiarios = document.getElementById('getBeneficiarios');
+const clearBeneficiarios = document.getElementById('clearBeneficiarios');
+const btnAceptarBeneficiario = document.getElementById('btnAceptarBeneficiario')
 let beneficiario = false;
 let accion = '';
 
@@ -84,8 +85,11 @@ const UpdateBeneficiario  = () => {
     for (let index = 0; index < 12; index++) {
         formBeneficiarios[index].value= beneficiario;
     }
+    formBeneficiarios[0].value = 'cc'
+    formBeneficiarios[7].value = 'cc'
+    formBeneficiarios[8].value = 'cc'
     añadirBeneficiario.innerHTML = `Actualizar <i class="fas fa-user-plus"></i>`
-    
+    ResetComponentBeneficiarios()
 }
 
 const HandleSendInvitation = () => {
@@ -129,12 +133,17 @@ const FetchBeneficiarios = () => {
   document.getElementById('beneficiariosComponent').className = 'd-block'
 }
 
+const ResetComponentBeneficiarios = () => {
+  document.getElementById('beneficiariosComponent').className = 'd-none'
+  document.getElementById('formBeneficiarios').className = 'd-block'
+}
 
-buttonLogin.addEventListener('click',  HandleValidateLogin);
+buttonLogin.addEventListener('click', () => HandleValidateLogin());
 btnUpdateUser.addEventListener('click', () => UpdateUser());
 añadirBeneficiario.addEventListener('click', () => SaveBeneficiario('Realizado con exito'));
-// btnAceptarBeneficiario.addEventListener('click', UpdateBeneficiario)
+btnAceptarBeneficiario.addEventListener('click', ()=> UpdateBeneficiario())
 getBeneficiarios.addEventListener('click', () => FetchBeneficiarios());
+clearBeneficiarios.addEventListener('click', () => ResetComponentBeneficiarios())
 
 formInvitacion.addEventListener('submit', (e) => {
     e.preventDefault()
