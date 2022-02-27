@@ -2,9 +2,9 @@ const buttonLogin = document.getElementById('aceptarLogin');
 const añadirBeneficiario = document.getElementById('añadirBeneficiario');
 const formBeneficiarios = document.getElementById('formBeneficiarios');
 const btnUpdateUser = document.getElementById('updateUser');
-const btnAceptarBeneficiario = document.getElementById('btnAceptarBeneficiario')
 const formInvitacion = document.getElementById('formInvitacion')
-
+const getBeneficiarios = document.getElementById('getBeneficiarios')
+// const btnAceptarBeneficiario = document.getElementById('btnAceptarBeneficiario')
 let beneficiario = false;
 let accion = '';
 
@@ -47,6 +47,26 @@ const SaveBeneficiario = (msg) => {
 
       formBeneficiarios.reset();
       añadirBeneficiario.innerHTML = `Añadir <i class="fas fa-user-plus"></i>`
+}
+
+
+const UpdateUser = () => {
+  const Toast = Swal.mixin({
+      toast: true,
+      position: 'top-end',
+      showConfirmButton: false,
+      timer: 3000,
+      timerProgressBar: true,
+      didOpen: (toast) => {
+        toast.addEventListener('mouseenter', Swal.stopTimer)
+        toast.addEventListener('mouseleave', Swal.resumeTimer)
+      }
+    })  
+
+    Toast.fire({
+      icon: 'success',
+      title: 'Se actualizo con exito'
+    })
 }
 
 const SelectBeneficiario = (id) => {
@@ -104,13 +124,20 @@ const HandleSendInvitation = () => {
      }      
 }
 
+const FetchBeneficiarios = () => {
+  document.getElementById('formBeneficiarios').className = 'd-none'
+  document.getElementById('beneficiariosComponent').className = 'd-block'
+}
+
 
 buttonLogin.addEventListener('click',  HandleValidateLogin);
+btnUpdateUser.addEventListener('click', () => UpdateUser());
 añadirBeneficiario.addEventListener('click', () => SaveBeneficiario('Realizado con exito'));
-btnUpdateUser.addEventListener('click', () => SaveBeneficiario('Se actualizo'));
-btnAceptarBeneficiario.addEventListener('click', UpdateBeneficiario)
+// btnAceptarBeneficiario.addEventListener('click', UpdateBeneficiario)
+getBeneficiarios.addEventListener('click', () => FetchBeneficiarios());
 
 formInvitacion.addEventListener('submit', (e) => {
     e.preventDefault()
     HandleSendInvitation();
 })
+
