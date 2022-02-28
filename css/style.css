@@ -166,7 +166,7 @@
 }
 
 .btn-secondary {
-    background-color: #6c757d!important;
+    background-color: var(--gray) !important;
     border: none!important;
     border-radius: 32px;
     padding: 13px 27px;
@@ -2535,7 +2535,7 @@ footer {
     -webkit-transform: translateY(-4px);
     -ms-transform: translateY(-4px);
     transform: translateY(-4px);
-    background: #4aab84
+    background: var(--blueDark)
 }
 
 #scroll i {
