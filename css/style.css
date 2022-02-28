@@ -1,3 +1,11 @@
+:root{
+    --blue: #00B2A9;
+    --blueDark: #3c5eb3;
+    --red: #E03E52;
+    --redDark: #D12A3E;
+    --gray: #4B4F54;
+}
+
 .dropdown-toggle::after {
     border-top: 0
 }
@@ -30,7 +38,7 @@
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
-    color: #4d72d0
+    color: var(--red) !important
 }
 
 .navbar-expand-lg .navbar-nav .dropdown-menu {
@@ -143,7 +151,7 @@
 }
 
 .btn-primary {
-    background-color: #4d72d0!important;
+    background-color: var(--blue) !important;
     border: none!important;
     border-radius: 32px;
     padding: 13px 27px;
@@ -1508,7 +1516,8 @@ a:focus {
 }
 
 .heading-style1 h2 {
-    font-weight: 600
+    font-weight: 600;
+    color: var(--gray);
 }
 
 .service-slider .slick-slide {
@@ -2512,7 +2521,7 @@ footer {
 
 #scroll {
     float: right;
-    background: #5bc198;
+    background: var(--blue);
     border-radius: 50%;
     width: 35px;
     height: 35px;
@@ -2895,7 +2904,7 @@ footer {
 
 .emergency {
     padding: 90px 0;
-    background: url(../images/bg-img-doctors.jpg) no-repeat;
+    background: url(../images/bg-img-doctors.webp) no-repeat;
     background-size: cover
 }
 
@@ -2937,6 +2946,10 @@ footer {
 
 .yellow-bg {
     background: #d9ae53!important
+}
+
+.red-bg{
+    background-color: var(--red) !important;
 }
 
 .doctors-box3 {
@@ -4550,6 +4563,13 @@ footer {
     cursor: pointer;
 }
 
+.icon-footer{
+    color: white;
+}
+
+.icon-footer:hover{
+    color: var(--red);
+}
 
 /* CELULARES */
 @media(max-width: 549px) {
