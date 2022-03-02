@@ -2562,7 +2562,7 @@ footer {
     -webkit-transform: translateY(-4px);
     -ms-transform: translateY(-4px);
     transform: translateY(-4px);
-    background: var(--blueDark)
+    background: var(--red)
 }
 
 #scroll i {
@@ -4582,8 +4582,32 @@ footer {
 
 .scroll-up {
     position: fixed;
+    bottom: 10%;
+    right: 1%;
+}
+
+.whatsapp {
+    position: fixed;
     bottom: 1%;
     right: 1%;
+    background: var(--blue);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.whatsapp:hover{
+    color: white;
+    background-color: var(--red);
 }
 
 .c-pointer {
@@ -4608,6 +4632,12 @@ footer {
     .my-xs-1{
         margin-top: 1rem;
         margin-bottom: 1rem;
+    }
+    .mb-xs-5{
+        margin-bottom: 5rem;
+    }
+    .mb-xs-2{
+        margin-bottom: 2rem;
     }
 }
 

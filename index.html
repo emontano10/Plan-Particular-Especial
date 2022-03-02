@@ -152,18 +152,18 @@
 
      
     <div class="container row d-flex" id="form">
-        <div class="col-5">
-            <h1 class="text-red fs-1" id="titleForm">
+        <div class="col-12 col-md-5 ">
+            <h1 class="text-red fs-1 text-center text-md-start" id="titleForm">
                 Ser parte es muy fácil, solo diligencias este formulario:
             </h1> 
         </div>
-        <div class="col-7">
+        <div class="col-12 col-md-7">
             <div id="banenerForm" class="banner-slider">
                 <!-- FORM #2 LOGIN -->
-                <div>
+                <div class="mb-xs-5">
                     <div class="row">
                         <div class="col-12 px-5">
-                            <div class="">
+                            <div>
                                 <form>                            
                                     <div class="row gx-2 gy-4 p-2">
                                         <div class="form-floating col-12 col-md-6">
@@ -298,8 +298,8 @@
                                                 </a>
                                             </div>
                                         </div>                
-                                        <div class="col-12 col-md-6 d-flex align-items-center justify-content-evenly">
-                                            <button id="updateUser" type="button" class="btn btn-primary" tabindex="0">
+                                        <div class="col-12 col-md-6 align-items-center justify-content-evenly">
+                                            <button id="updateUser" type="button" class="btn btn-primary my-xs-1" tabindex="0">
                                                 Guardar
                                                 <i class="fas fa-save"></i>
                                             </button>
@@ -316,14 +316,14 @@
                 </div>      
                 <!-- FORM #4  BENEFICIARIOS-->
                 <div>
-                    <div class="row mb-3">
+                    <div class="row mb-xs-5">
                         <div class="col-md-12 px-5">
                             <div class="my-4">                    
                                 <b>Beneficiarios (Menores de 18 años)</b>
                                 <div class="d-none" id="beneficiariosComponent">
-                                    <table class="table table-bordered text-left my-2">
+                                    <table class="table table-bordered text-left my-2 overflow-auto">
                                         <thead>
-                                            <tr class="table-primary">
+                                            <tr class="bg-blue text-white">
                                                 <th scope="col">SELECCIONAR</th>
                                                 <th scope="col">DOCUMENTO</th>
                                                 <th scope="col">NOMBRE DEL BENEFICIARIO</th>
@@ -333,7 +333,7 @@
                                         <tbody>
                                             <tr id="tr1">
                                                 <th class="text-center">
-                                                    <i onclick="SelectBeneficiario(1)" class="fas fa-check-circle text-primary c-pointer"></i>
+                                                    <i onclick="SelectBeneficiario(1)" class="fas fa-check-circle text-blue c-pointer"></i>
                                                 </th>
                                                 <td>1107512506</td>
                                                 <td>NICOLÁS CHAMORRO GIRÓN</td>
@@ -345,7 +345,7 @@
                                             </tr>
                                             <tr id="tr2">
                                                 <th class="text-center">
-                                                    <i onclick="SelectBeneficiario(2)" class="fas fa-check-circle text-primary c-pointer"></i>
+                                                    <i onclick="SelectBeneficiario(2)" class="fas fa-check-circle text-blue c-pointer"></i>
                                                 </th>
                                                 <td>164482658</td>
                                                 <td>FUANSAFON MUSMELL LOGIN</td>
@@ -357,7 +357,7 @@
                                             </tr>
                                             <tr id="tr3">
                                                 <th class="text-center">
-                                                    <i onclick="SelectBeneficiario(3)" class="fas fa-check-circle text-primary c-pointer"></i>
+                                                    <i onclick="SelectBeneficiario(3)" class="fas fa-check-circle text-blue c-pointer"></i>
                                                 </th>
                                                 <td>97092823400</td>
                                                 <td>CAMILA SILVA RUIZ</td>
@@ -369,12 +369,12 @@
                                             </tr>
                                         </tbody>
                                     </table>
-                                    <div class="d-flex justify-content-center my-2">
-                                        <button id="clearBeneficiarios" type="button" class="btn btn-primary mx-1">
+                                    <div class="d-flex flex-wrap justify-content-center">
+                                        <button id="clearBeneficiarios" type="button" class="btn btn-primary mx-1 my-1">
                                             Retroceder
                                             <i class="fas fa-arrow-alt-circle-left"></i>
                                         </button>
-                                        <button id="btnAceptarBeneficiario" type="button" class="btn btn-primary mx-1">
+                                        <button id="btnAceptarBeneficiario" type="button" class="btn btn-primary mx-1 my-1">
                                             Seleccionar
                                             <i class="fas fa-badge-check"></i>
                                         </button>                           
@@ -477,7 +477,7 @@
                 </div>      
                 <!-- FORM #5 INVITACION-->
                 <div>
-                    <div class="row">
+                    <div class="row mb-xs-5">
                         <div class="col-md-12 px-5">
                             <div class="">
                                 <p class="fw-bold">
@@ -956,6 +956,9 @@
     </footer>
 
     <a href="#" id="scroll" class="scroll-up"><i class="fas fa-angle-double-up"></i></a>
+    <a class="whatsapp">
+        <i class="fab fa-whatsapp fa-2x"></i>
+    </a>
     <div id="loading" class="loader d-none"></div>
 
     <!-- FLOAT SOCIALS -->
@@ -1011,3 +1014,6 @@
 </body>
 
 </html>
+
+
+<!-- WHATSAPP 3175020949 -->
