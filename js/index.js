@@ -6,6 +6,8 @@ const formInvitacion = document.getElementById('formInvitacion');
 const getBeneficiarios = document.getElementById('getBeneficiarios');
 const clearBeneficiarios = document.getElementById('clearBeneficiarios');
 const btnAceptarBeneficiario = document.getElementById('btnAceptarBeneficiario')
+const clickAddBene = document.getElementById('clickAddBene');
+
 let beneficiario = false;
 let accion = '';
 
@@ -128,6 +130,13 @@ const HandleSendInvitation = () => {
      }      
 }
 
+const ScrollForm = () => {
+  const title = document.getElementById('titleForm')
+  const meesage = 'Ingresa o actualiza información tuya y de tus beneficiarios diligenciando estos campos:'
+  title.innerText = meesage;
+
+}
+
 const FetchBeneficiarios = () => {
   document.getElementById('formBeneficiarios').className = 'd-none'
   document.getElementById('beneficiariosComponent').className = 'd-block'
@@ -144,6 +153,7 @@ añadirBeneficiario.addEventListener('click', () => SaveBeneficiario('Realizado 
 btnAceptarBeneficiario.addEventListener('click', ()=> UpdateBeneficiario())
 getBeneficiarios.addEventListener('click', () => FetchBeneficiarios());
 clearBeneficiarios.addEventListener('click', () => ResetComponentBeneficiarios())
+clickAddBene.addEventListener('click', () => ScrollForm())
 
 formInvitacion.addEventListener('submit', (e) => {
     e.preventDefault()

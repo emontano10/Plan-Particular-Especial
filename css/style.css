@@ -207,8 +207,8 @@
 }
 
 .btn-primary:hover {
-    background: #3c5eb3!important;
-    border-color: #3c5eb3!important
+    background: var(--red) !important;
+    border-color: var(--red) !important
 }
 
 .btn-primary:focus {
@@ -534,7 +534,7 @@ a:focus {
 
 @media(min-width: 768px) {
     .space {
-        padding:90px 0
+        padding:0px 0  
     }
 }
 

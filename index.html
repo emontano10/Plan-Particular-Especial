@@ -57,7 +57,7 @@
 
     <div class="light nav-big">
         <div class="container">
-            <div class="row">
+            <div class="row w-100">
                 <div class="col-md-12">
                     <nav class="navbar navbar-expand-lg navbar-light">
                         <button 
@@ -118,7 +118,7 @@
         </div>
     </div>
     <div >
-        <div class="row">
+        <div class="row w-100">
             <div class="col-md-9 col-lg-6 px-5">
                 <div class="main-title main-title-style2">
                     <p>Ahora puedes acceder a los servicios de la Clínica Imbanaco con precios especiales para
@@ -141,10 +141,7 @@
                     >
                         Conoce nuestros descuentos
                         <i class="fas fa-arrow-circle-down"></i>
-                    </a>      
-                    <h1 class="text-red">
-                        Ser parte es muy fácil, solo diligencias este formulario:
-                    </h1>                  
+                    </a>                                      
                 </div>
             </div>
             <div class="col-6 d-none d-lg-block">
@@ -152,409 +149,406 @@
             </div>
         </div>
     </div>
-    <!-- FORMULARIO  -->
-    <div id="banenerForm" class="banner-slider">
-        <!-- FORM #2 LOGIN -->
-         <div>
-            <div class="row">
-                <div class="col-md-9 col-lg-6 px-5">
-                    <div class="main-title main-title-style2">
-                        <span>Inicia sessión o crea un usuario nuevo</span>
-                        <form>                            
-                            <div class="row gx-2 gy-4 p-2">
-                                <div class="form-floating col-12 col-md-6">
-                                    <select class="form-select" required>
-                                        <option selected value=""></option>
-                                        <option value="cc">CC - CÉDULA DE CIUDADANIA</option>
-                                        <option value="ce">CE - CÉDULA EXTRANJERA</option>
-                                        <option value="pa">PA - PASAPORTE</option>
-                                    </select>
-                                    <label>Tipo de documento</label>
-                                </div>
-                                <div class="form-floating col-12 col-md-6">
-                                    <input type="text" class="form-control" placeholder="Numero de documento" required>
-                                    <label>Numero de documento</label>
-                                </div>
-                                <div class="form-floating col-12 col-md-6">
-                                    <input type="email" class="form-control" placeholder="Correo Electrónico" required>
-                                    <label>Correo Electrónico</label>
-                                </div>
-                                <div class="form-floating col-12 col-md-6">
-                                    <input type="text" class="form-control" placeholder="Celular" required>
-                                    <label>Celular</label>
-                                </div>
-                                <div id="pin" class="d-none form-floating col-12 col-md-6">
-                                    <input type="text" class="form-control" placeholder="Validar" required>
-                                    <label>Validar</label>
-                                </div>  
-                                <div id="btnValidar" class="col-12 col-md-6 d-flex align-items-center">
-                                    <button                                            
-                                        type="button" 
-                                        class="btn btn-primary"
-                                        data-bs-toggle="modal"
-                                        data-bs-target="#exampleModal"
-                                        tabindex="0"
-                                    >
-                                        Login
-                                        <i class="fas fa-badge-check"></i>
-                                    </button>
-                                </div> 
-                            </div>                             
-                        </form>                                                     
-                    </div>
-                </div>
-                <div class="col-6 d-none d-lg-block">
-                    <img src="images/form/login.webp" class="img-fluid" alt="plan particular">
-                </div>
-            </div>
+
+     
+    <div class="container row d-flex" id="form">
+        <div class="col-5">
+            <h1 class="text-red fs-1" id="titleForm">
+                Ser parte es muy fácil, solo diligencias este formulario:
+            </h1> 
         </div>
-        <!-- FORM #3  DATA TITULAR-->
-        <div>
-            <div class="row mb-5">
-                <div class="col-md-9 col-lg-6 px-5">
-                    <div class="my-3">
-                        <b>Datos del titular</b>
-                        <form>
-                            <div class="row gx-2 gy-2 gy-xxl-3 my-2">
-                                <div class="form-floating col-12 col-md-6">
-                                    <input 
-                                        value="CC - CEDULA DE CIUDADANIA" 
-                                        type="text" 
-                                        class="form-control" 
-                                        required
-                                    >
-                                    <label>Tipo de documento</label>
-                                </div>
-                                <div class="form-floating col-12 col-md-6">
-                                    <input 
-                                        value="1107512506" 
-                                        type="text" 
-                                        class="form-control" 
-                                        required
-                                    >
-                                    <label>Numero de documento</label>
-                                </div>
-                                <div class="form-floating col-12 col-md-4">
-                                    <input type="text" class="form-control"  required>
-                                    <label>Primer Nombre</label>
-                                </div>
-                                <div class="form-floating col-12 col-md-4">
-                                    <input type="text" class="form-control" required>
-                                    <label>Segundo Nombre</label>
-                                </div>
-                                <div class="form-floating col-12 col-md-4">
-                                    <input type="text" class="form-control" required>
-                                    <label>Primer Apellido</label>
-                                </div>
-                                <div class="form-floating col-12 col-md-4">
-                                    <input type="text" class="form-control" required>
-                                    <label>Segundo Apellido</label>
-                                </div>
-                                <div class="form-floating col-12 col-md-4">
-                                    <input type="date" class="form-control" required>
-                                    <label>Fecha Nacimiento</label>
-                                </div>
-                                <div class="form-floating col-12 col-md-4">
-                                    <select class="form-select" required>
-                                        <option selected value=""></option>
-                                        <option value="cc">Valle del cauca</option>
-                                        <option value="ce">Amazonas</option>
-                                        <option value="pa">Arauca</option>
-                                    </select>
-                                    <label>Departamento</label>
-                                </div>
-                                <div class="form-floating col-12 col-md-6">
-                                    <select class="form-select" required>
-                                        <option selected value=""></option>
-                                        <option value="cc">Cali</option>
-                                        <option value="ce">Medellin</option>
-                                        <option value="pa">Bogota</option>
-                                    </select>
-                                    <label>Ciudad</label>
-                                </div>         
-                                <div class="form-floating col-12 col-md-6">
-                                    <input type="text" class="form-control" required>
-                                    <label>Direección Residencia</label>
-                                </div>      
-                                <div class="form-floating col-12 col-md-6">
-                                    <input type="email" class="form-control" required>
-                                    <label>Correo Electrónico</label>
-                                </div>      
-                                <div class="form-floating col-12 col-md-6">
-                                    <input type="text" class="form-control" required>
-                                    <label>Celular</label>
-                                </div>  
-                                <div class="col-12 col-md-6 d-flex align-items-center">
-                                    <div class="form-check form-switch">
-                                        <input class="form-check-input" type="checkbox">
-                                        <a 
-                                            class="c-pointer"
-                                            style="text-decoration: none;"
-                                            href="https://www.imbanaco.com/privacidad/"
-                                            target="_blank"
-                                        > 
-                                            Acepto Politica y Privacidad 
-                                        </a>
-                                    </div>
-                                </div>                
-                                <div class="col-12 col-md-6 d-flex align-items-center justify-content-evenly">
-                                    <button id="updateUser" type="button" class="btn btn-primary" tabindex="0">
-                                        Guardar
-                                        <i class="fas fa-save"></i>
-                                    </button>
-                                    <button id="continuarUserData" type="button" class="btn btn-primary" tabindex="0">
-                                        Continuar
-                                        <i class="fas fa-badge-check"></i>
-                                    </button>
-                                </div> 
-                            </div>                             
-                        </form>                                                     
-                    </div>
-                </div>
-                <div class="col-6 d-none d-lg-block">
-                    <img src="images/form/datosusuario.webp" class="img-fluid" alt="plan particular">
-                </div>
-            </div>
-        </div>      
-        <!-- FORM #4  BENEFICIARIOS-->
-        <div>
-            <div class="row mb-3">
-                <div class="col-md-9 col-lg-6 px-5">
-                    <div class="my-4">                    
-                        <b>Beneficiarios (Menores de 18 años)</b>
-                        <div class="d-none" id="beneficiariosComponent">
-                            <table class="table table-bordered text-left my-2">
-                                <thead>
-                                    <tr class="table-primary">
-                                        <th scope="col">SELECCIONAR</th>
-                                        <th scope="col">DOCUMENTO</th>
-                                        <th scope="col">NOMBRE DEL BENEFICIARIO</th>
-                                        <th scope="col">ESTADO</th>
-                                    </tr>  
-                                </thead>
-                                <tbody>
-                                    <tr id="tr1">
-                                        <th class="text-center">
-                                            <i onclick="SelectBeneficiario(1)" class="fas fa-check-circle text-primary c-pointer"></i>
-                                        </th>
-                                        <td>1107512506</td>
-                                        <td>NICOLÁS CHAMORRO GIRÓN</td>
-                                        <td class="d-flex justify-content-center">
-                                            <div class="form-check form-switch">
-                                                <input class="form-check-input" type="checkbox"/>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr id="tr2">
-                                        <th class="text-center">
-                                            <i onclick="SelectBeneficiario(2)" class="fas fa-check-circle text-primary c-pointer"></i>
-                                        </th>
-                                        <td>164482658</td>
-                                        <td>FUANSAFON MUSMELL LOGIN</td>
-                                        <td class="d-flex justify-content-center">
-                                            <div class="form-check form-switch">
-                                                <input class="form-check-input" type="checkbox" checked/>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr id="tr3">
-                                        <th class="text-center">
-                                            <i onclick="SelectBeneficiario(3)" class="fas fa-check-circle text-primary c-pointer"></i>
-                                        </th>
-                                        <td>97092823400</td>
-                                        <td>CAMILA SILVA RUIZ</td>
-                                        <td class="d-flex justify-content-center">
-                                            <div class="form-check form-switch">
-                                                <input class="form-check-input" type="checkbox" checked/>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <div class="d-flex justify-content-center my-2">
-                                <button id="clearBeneficiarios" type="button" class="btn btn-primary mx-1">
-                                    Retroceder
-                                    <i class="fas fa-arrow-alt-circle-left"></i>
-                                </button>
-                                <button id="btnAceptarBeneficiario" type="button" class="btn btn-primary mx-1">
-                                    Seleccionar
-                                    <i class="fas fa-badge-check"></i>
-                                </button>                           
+        <div class="col-7">
+            <div id="banenerForm" class="banner-slider">
+                <!-- FORM #2 LOGIN -->
+                <div>
+                    <div class="row">
+                        <div class="col-12 px-5">
+                            <div class="">
+                                <form>                            
+                                    <div class="row gx-2 gy-4 p-2">
+                                        <div class="form-floating col-12 col-md-6">
+                                            <select class="form-select" required>
+                                                <option selected value=""></option>
+                                                <option value="cc">CC - CÉDULA DE CIUDADANIA</option>
+                                                <option value="ce">CE - CÉDULA EXTRANJERA</option>
+                                                <option value="pa">PA - PASAPORTE</option>
+                                            </select>
+                                            <label>Tipo de documento</label>
+                                        </div>
+                                        <div class="form-floating col-12 col-md-6">
+                                            <input type="text" class="form-control" placeholder="Numero de documento" required>
+                                            <label>Número de documento</label>
+                                        </div>
+                                        <div class="form-floating col-12 col-md-6">
+                                            <input type="email" class="form-control" placeholder="Correo Electrónico" required>
+                                            <label>Correo electrónico</label>
+                                        </div>
+                                        <div class="form-floating col-12 col-md-6">
+                                            <input type="text" class="form-control" placeholder="Celular" required>
+                                            <label>Celular</label>
+                                        </div>
+                                        <div id="pin" class="d-none form-floating col-12 col-md-6">
+                                            <input type="text" class="form-control" placeholder="Código de verificación" required>
+                                            <label>Código de verificación</label>
+                                        </div>  
+                                        <div id="btnValidar" class="col-12 col-md-6 d-flex align-items-center">
+                                            <button                                            
+                                                type="button" 
+                                                class="btn btn-primary"
+                                                data-bs-toggle="modal"
+                                                data-bs-target="#exampleModal"
+                                                tabindex="0"
+                                            >
+                                                Ingresar
+                                                <i class="fas fa-badge-check"></i>
+                                            </button>
+                                        </div> 
+                                    </div>                             
+                                </form>                                                     
                             </div>
                         </div>
-                        <form id="formBeneficiarios">
-                            <div class="row gx-2 gy-2 gy-xxl-3 my-2">
-                                <div class="form-floating col-12 col-md-6">
-                                    <select class="form-select" required>
-                                        <option selected value=""></option>
-                                        <option value="cc">CC - CÉDULA DE CIUDADANIA</option>
-                                        <option value="ce">CE - CÉDULA EXTRANJERA</option>
-                                        <option value="pa">PA - PASAPORTE</option>
-                                    </select>
-                                    <label>Tipo de documento</label>
-                                </div>
-                                <div class="form-floating col-12 col-md-6">
-                                    <input 
-                                        value="" 
-                                        type="text" 
-                                        class="form-control" 
-                                        required
-                                    >
-                                    <label>Numero de documento</label>
-                                </div>
-                                <div class="form-floating col-12 col-md-4">
-                                    <input type="text" class="form-control"  required>
-                                    <label>Primer Nombre</label>
-                                </div>
-                                <div class="form-floating col-12 col-md-4">
-                                    <input type="text" class="form-control" required>
-                                    <label>Segundo Nombre</label>
-                                </div>
-                                <div class="form-floating col-12 col-md-4">
-                                    <input type="text" class="form-control" required>
-                                    <label>Primer Apellido</label>
-                                </div>
-                                <div class="form-floating col-12 col-md-4">
-                                    <input type="text" class="form-control" required>
-                                    <label>Segundo Apellido</label>
-                                </div>
-                                <div class="form-floating col-12 col-md-4">
-                                    <input type="date" class="form-control" required>
-                                    <label>Fecha Nacimiento</label>
-                                </div>
-                                <div class="form-floating col-12 col-md-4">
-                                    <select class="form-select" required>
-                                        <option selected value=""></option>
-                                        <option value="cc">Valle del cauca</option>
-                                        <option value="ce">Amazonas</option>
-                                        <option value="pa">Arauca</option>
-                                    </select>
-                                    <label>Departamento</label>
-                                </div>
-                                <div class="form-floating col-12 col-md-6">
-                                    <select class="form-select" required>
-                                        <option selected value=""></option>
-                                        <option value="cc">Cali</option>
-                                        <option value="ce">Medellin</option>
-                                        <option value="pa">Bogota</option>
-                                    </select>
-                                    <label>Ciudad</label>
-                                </div>         
-                                <div class="form-floating col-12 col-md-6">
-                                    <input type="text" class="form-control" required>
-                                    <label>Direección Residencia</label>
-                                </div>      
-                                <div class="form-floating col-12 col-md-6">
-                                    <input type="email" class="form-control" required>
-                                    <label>Correo Electrónico</label>
-                                </div>      
-                                <div class="form-floating col-12 col-md-6">
-                                    <input type="text" class="form-control" required>
-                                    <label>Celular</label>
-                                </div>              
-                                <div class="col-12">
-                                    <button id="añadirBeneficiario" type="button" class="btn btn-primary">
-                                        Añadir
-                                        <i class="fas fa-user-plus"></i>
-                                    </button>
-                                    <button    
-                                        id="getBeneficiarios"                                                                             
-                                        type="button" 
-                                        class="btn btn-primary my-xs-1"
-                                        tabindex="0"
-                                    >
-                                        Consultar
-                                        <i class="fas fa-search"></i>
-                                    </button>
-                                    <button id="nextBeneficiarios" type="button" class="btn btn-primary">
-                                        Continuar
-                                        <i class="fas fa-badge-check"></i>
-                                    </button>
-                                </div> 
-                            </div>                             
-                        </form>                             
                     </div>
                 </div>
-                <div class="col-6 d-none d-lg-block">
-                    <img src="images/form/beneficiarios.webp" class="img-fluid" alt="plan particular">
-                </div>
-            </div>
-        </div>      
-        <!-- FORM #5 INVITACION-->
-        <div>
-            <div class="row">
-                <div class="col-md-9 col-lg-6 px-5">
-                    <div class="main-title main-title-style2">
-                        <p class="fw-bold">Le gustaria invitar a un amigo, conocido o familiar al Plan Particular Especial</p>
-                        <p class="fs-1">Enviar Invitación</p>
-                        <form id="formInvitacion">
-                            <div class="row gx-3 gy-4 my-2">
-                                <div class="form-floating col-12">
-                                    <div class="form-floating col-md-6">
-                                        <input type="text" class="form-control" placeholder="Nombre" required>
-                                        <label>Nombre</label>
-                                    </div>      
-                                </div>      
-                                <div class="form-floating col-12 col-md-6">
-                                    <div class="form-floating">
-                                        <input type="email" class="form-control" placeholder="Correo">
-                                        <label>Correo</label>
-                                    </div>      
-                                </div> 
-                                <div class="form-floating col-12 col-md-6">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control" placeholder="Celular">
-                                        <label>Celular</label>
-                                    </div>      
-                                </div>       
-                                <div class="col-12">                              
-                                    <button type="submit" class="btn btn-primary">
-                                        Enviar
-                                        <i class="fas fa-envelope"></i>
-                                    </button>
-                                </div> 
-                            </div>                             
-                        </form>                                      
+                <!-- FORM #3  DATA TITULAR-->
+                <div>
+                    <div class="row mb-5">
+                        <div class="col-md-12 px-5">
+                            <div class="my-3">
+                                <b>Datos del titular</b>
+                                <form>
+                                    <div class="row gx-2 gy-2 gy-xxl-3 my-2">
+                                        <div class="form-floating col-12 col-md-6">
+                                            <input 
+                                                value="CC - CEDULA DE CIUDADANIA" 
+                                                type="text" 
+                                                class="form-control" 
+                                                required
+                                            >
+                                            <label>Tipo de documento</label>
+                                        </div>
+                                        <div class="form-floating col-12 col-md-6">
+                                            <input 
+                                                value="1107512506" 
+                                                type="text" 
+                                                class="form-control" 
+                                                required
+                                            >
+                                            <label>Numero de documento</label>
+                                        </div>
+                                        <div class="form-floating col-12 col-md-4">
+                                            <input type="text" class="form-control"  required>
+                                            <label>Primer Nombre</label>
+                                        </div>
+                                        <div class="form-floating col-12 col-md-4">
+                                            <input type="text" class="form-control" required>
+                                            <label>Segundo Nombre</label>
+                                        </div>
+                                        <div class="form-floating col-12 col-md-4">
+                                            <input type="text" class="form-control" required>
+                                            <label>Primer Apellido</label>
+                                        </div>
+                                        <div class="form-floating col-12 col-md-4">
+                                            <input type="text" class="form-control" required>
+                                            <label>Segundo Apellido</label>
+                                        </div>
+                                        <div class="form-floating col-12 col-md-4">
+                                            <input type="date" class="form-control" required>
+                                            <label>Fecha Nacimiento</label>
+                                        </div>
+                                        <div class="form-floating col-12 col-md-4">
+                                            <select class="form-select" required>
+                                                <option selected value=""></option>
+                                                <option value="cc">Valle del cauca</option>
+                                                <option value="ce">Amazonas</option>
+                                                <option value="pa">Arauca</option>
+                                            </select>
+                                            <label>Departamento</label>
+                                        </div>
+                                        <div class="form-floating col-12 col-md-6">
+                                            <select class="form-select" required>
+                                                <option selected value=""></option>
+                                                <option value="cc">Cali</option>
+                                                <option value="ce">Medellin</option>
+                                                <option value="pa">Bogota</option>
+                                            </select>
+                                            <label>Ciudad</label>
+                                        </div>         
+                                        <div class="form-floating col-12 col-md-6">
+                                            <input type="text" class="form-control" required>
+                                            <label>Direección Residencia</label>
+                                        </div>      
+                                        <div class="form-floating col-12 col-md-6">
+                                            <input type="email" class="form-control" required>
+                                            <label>Correo Electrónico</label>
+                                        </div>      
+                                        <div class="form-floating col-12 col-md-6">
+                                            <input type="text" class="form-control" required>
+                                            <label>Celular</label>
+                                        </div>  
+                                        <div class="col-12 col-md-6 d-flex align-items-center">
+                                            <div class="form-check form-switch">
+                                                <input class="form-check-input" type="checkbox">
+                                                <a 
+                                                    class="c-pointer"
+                                                    style="text-decoration: none;"
+                                                    href="https://www.imbanaco.com/privacidad/"
+                                                    target="_blank"
+                                                > 
+                                                    Acepto Politica y Privacidad 
+                                                </a>
+                                            </div>
+                                        </div>                
+                                        <div class="col-12 col-md-6 d-flex align-items-center justify-content-evenly">
+                                            <button id="updateUser" type="button" class="btn btn-primary" tabindex="0">
+                                                Guardar
+                                                <i class="fas fa-save"></i>
+                                            </button>
+                                            <button id="continuarUserData" type="button" class="btn btn-primary" tabindex="0">
+                                                Continuar
+                                                <i class="fas fa-badge-check"></i>
+                                            </button>
+                                        </div> 
+                                    </div>                             
+                                </form>                                                     
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="col-6 d-none d-lg-block">
-                    <img src="images/form/Invitacion.webp" class="img-fluid" alt="plan particular">
-                </div>
+                </div>      
+                <!-- FORM #4  BENEFICIARIOS-->
+                <div>
+                    <div class="row mb-3">
+                        <div class="col-md-12 px-5">
+                            <div class="my-4">                    
+                                <b>Beneficiarios (Menores de 18 años)</b>
+                                <div class="d-none" id="beneficiariosComponent">
+                                    <table class="table table-bordered text-left my-2">
+                                        <thead>
+                                            <tr class="table-primary">
+                                                <th scope="col">SELECCIONAR</th>
+                                                <th scope="col">DOCUMENTO</th>
+                                                <th scope="col">NOMBRE DEL BENEFICIARIO</th>
+                                                <th scope="col">ESTADO</th>
+                                            </tr>  
+                                        </thead>
+                                        <tbody>
+                                            <tr id="tr1">
+                                                <th class="text-center">
+                                                    <i onclick="SelectBeneficiario(1)" class="fas fa-check-circle text-primary c-pointer"></i>
+                                                </th>
+                                                <td>1107512506</td>
+                                                <td>NICOLÁS CHAMORRO GIRÓN</td>
+                                                <td class="d-flex justify-content-center">
+                                                    <div class="form-check form-switch">
+                                                        <input class="form-check-input" type="checkbox"/>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr id="tr2">
+                                                <th class="text-center">
+                                                    <i onclick="SelectBeneficiario(2)" class="fas fa-check-circle text-primary c-pointer"></i>
+                                                </th>
+                                                <td>164482658</td>
+                                                <td>FUANSAFON MUSMELL LOGIN</td>
+                                                <td class="d-flex justify-content-center">
+                                                    <div class="form-check form-switch">
+                                                        <input class="form-check-input" type="checkbox" checked/>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr id="tr3">
+                                                <th class="text-center">
+                                                    <i onclick="SelectBeneficiario(3)" class="fas fa-check-circle text-primary c-pointer"></i>
+                                                </th>
+                                                <td>97092823400</td>
+                                                <td>CAMILA SILVA RUIZ</td>
+                                                <td class="d-flex justify-content-center">
+                                                    <div class="form-check form-switch">
+                                                        <input class="form-check-input" type="checkbox" checked/>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <div class="d-flex justify-content-center my-2">
+                                        <button id="clearBeneficiarios" type="button" class="btn btn-primary mx-1">
+                                            Retroceder
+                                            <i class="fas fa-arrow-alt-circle-left"></i>
+                                        </button>
+                                        <button id="btnAceptarBeneficiario" type="button" class="btn btn-primary mx-1">
+                                            Seleccionar
+                                            <i class="fas fa-badge-check"></i>
+                                        </button>                           
+                                    </div>
+                                </div>
+                                <form id="formBeneficiarios">
+                                    <div class="row gx-2 gy-2 gy-xxl-3 my-2">
+                                        <div class="form-floating col-12 col-md-6">
+                                            <select class="form-select" required>
+                                                <option selected value=""></option>
+                                                <option value="cc">CC - CÉDULA DE CIUDADANIA</option>
+                                                <option value="ce">CE - CÉDULA EXTRANJERA</option>
+                                                <option value="pa">PA - PASAPORTE</option>
+                                            </select>
+                                            <label>Tipo de documento</label>
+                                        </div>
+                                        <div class="form-floating col-12 col-md-6">
+                                            <input 
+                                                value="" 
+                                                type="text" 
+                                                class="form-control" 
+                                                required
+                                            >
+                                            <label>Numero de documento</label>
+                                        </div>
+                                        <div class="form-floating col-12 col-md-4">
+                                            <input type="text" class="form-control"  required>
+                                            <label>Primer Nombre</label>
+                                        </div>
+                                        <div class="form-floating col-12 col-md-4">
+                                            <input type="text" class="form-control" required>
+                                            <label>Segundo Nombre</label>
+                                        </div>
+                                        <div class="form-floating col-12 col-md-4">
+                                            <input type="text" class="form-control" required>
+                                            <label>Primer Apellido</label>
+                                        </div>
+                                        <div class="form-floating col-12 col-md-4">
+                                            <input type="text" class="form-control" required>
+                                            <label>Segundo Apellido</label>
+                                        </div>
+                                        <div class="form-floating col-12 col-md-4">
+                                            <input type="date" class="form-control" required>
+                                            <label>Fecha Nacimiento</label>
+                                        </div>
+                                        <div class="form-floating col-12 col-md-4">
+                                            <select class="form-select" required>
+                                                <option selected value=""></option>
+                                                <option value="cc">Valle del cauca</option>
+                                                <option value="ce">Amazonas</option>
+                                                <option value="pa">Arauca</option>
+                                            </select>
+                                            <label>Departamento</label>
+                                        </div>
+                                        <div class="form-floating col-12 col-md-6">
+                                            <select class="form-select" required>
+                                                <option selected value=""></option>
+                                                <option value="cc">Cali</option>
+                                                <option value="ce">Medellin</option>
+                                                <option value="pa">Bogota</option>
+                                            </select>
+                                            <label>Ciudad</label>
+                                        </div>         
+                                        <div class="form-floating col-12 col-md-6">
+                                            <input type="text" class="form-control" required>
+                                            <label>Direección Residencia</label>
+                                        </div>      
+                                        <div class="form-floating col-12 col-md-6">
+                                            <input type="email" class="form-control" required>
+                                            <label>Correo Electrónico</label>
+                                        </div>      
+                                        <div class="form-floating col-12 col-md-6">
+                                            <input type="text" class="form-control" required>
+                                            <label>Celular</label>
+                                        </div>              
+                                        <div class="col-12">
+                                            <button id="añadirBeneficiario" type="button" class="btn btn-primary">
+                                                Añadir
+                                                <i class="fas fa-user-plus"></i>
+                                            </button>
+                                            <button    
+                                                id="getBeneficiarios"                                                                             
+                                                type="button" 
+                                                class="btn btn-primary my-xs-1"
+                                                tabindex="0"
+                                            >
+                                                Consultar
+                                                <i class="fas fa-search"></i>
+                                            </button>
+                                            <button id="nextBeneficiarios" type="button" class="btn btn-primary">
+                                                Continuar
+                                                <i class="fas fa-badge-check"></i>
+                                            </button>
+                                        </div> 
+                                    </div>                             
+                                </form>                             
+                            </div>
+                        </div>
+                    </div>
+                </div>      
+                <!-- FORM #5 INVITACION-->
+                <div>
+                    <div class="row">
+                        <div class="col-md-12 px-5">
+                            <div class="">
+                                <p class="fw-bold">
+                                    Le gustaria invitar a un amigo, conocido o familiar al Plan 
+                                    Particular Especial
+                                </p>
+                                <p class="fs-1">Enviar Invitación</p>
+                                <form id="formInvitacion">
+                                    <div class="row gx-3 gy-3 my-2">
+                                        <div class="form-floating col-12">
+                                            <div class="form-floating col-md-6">
+                                                <input type="text" class="form-control" placeholder="Nombre" required>
+                                                <label>Nombre</label>
+                                            </div>      
+                                        </div>      
+                                        <div class="form-floating col-12 col-md-6">
+                                            <div class="form-floating">
+                                                <input type="email" class="form-control" placeholder="Correo">
+                                                <label>Correo</label>
+                                            </div>      
+                                        </div> 
+                                        <div class="form-floating col-12 col-md-6">
+                                            <div class="form-floating">
+                                                <input type="text" class="form-control" placeholder="Celular">
+                                                <label>Celular</label>
+                                            </div>      
+                                        </div>       
+                                        <div class="col-12">                              
+                                            <button type="submit" class="btn btn-primary">
+                                                Enviar
+                                                <i class="fas fa-envelope"></i>
+                                            </button>
+                                        </div> 
+                                    </div>                             
+                                </form>                                      
+                            </div>
+                        </div>
+                    </div>
+                </div>      
             </div>
-        </div>      
+        </div>
     </div>
-
-
+    
     <section class="about-section">
         <div class="container container-custom">
             <div class="row space">
 
                 <div class="col-md-4">
                     <div class="service-thumbnail services-top-icon services-top-icon2 blue d-flex flex-fill">
-                        <img src="images/service-icon8.png" class="img-fluid" alt="#">
+                        <i class="fas fa-user-md-chat fa-3x text-blue"></i>
                         <div class="service-thumbnail_text">
-                            <h4>Servicio Especializado</h4>
-                            <p>Garantizado.</p>
+                            <h4>Conoce nuestro directorio médico</h4>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-md-4">
+                <a href="#form" id="clickAddBene" class="col-md-4">
                     <div class="service-thumbnail services-top-icon services-top-icon2 green d-flex flex-fill">
-                        <img src="images/service-icon9.png" class="img-fluid" alt="#">
+                        <img src="images/service-icon9.png" class="img-fluid" alt="servicios">
                         <div class="service-thumbnail_text">
-                            <h4>Atención avanzada</h4>
-                            <p>Menos espera.</p>
+                            <h4>Agrega tus beneficiarios y actualiza tus datos</h4>
                         </div>
                     </div>
-                </div>
+                </a>
 
                 <div class="col-md-4">
                     <div class="service-thumbnail services-top-icon services-top-icon2 yellow d-flex flex-fill">
-                        <img src="images/service-icon10.png" class="img-fluid" alt="#">
+                        <i class="fas fa-question-circle fa-3x text-blue"></i>
                         <div class="service-thumbnail_text">
-                            <h4>Resultados en linea</h4>
-                            <p>Laboratorio</p>
+                            <h4>Preguntas frecuentes</h4>
+                            <p>Click aqui</p>
                         </div>
                     </div>
                 </div>
@@ -870,7 +864,7 @@
             <div class="row">
                 <div class="col-md-7 offset-md-5 col-lg-5 offset-lg-7">
                     <div class="emergency-box">
-                        <h2>Contactenos.</h2>
+                        <h2>Contáctenos.</h2>
                         <p>
                            Si tiene alguna duda, pregunta o inquietud; no dude en contactarnos por cualquiera de
                            nuestros medios de comunicacion, ya que uno de nuestros asesores podra comunicarse con usted
@@ -973,7 +967,7 @@
                 </a>
            </li>
            <li class="list-group-item bg-red">
-                <a class="nav-link d-flex justify-content-center" href="https://www.youtube.com/user/centromedimbanaco">
+                <a class="nav-link d-flex justify-content-center" href="https://www.instagram.com/clinicaimbanaco/">
                     <i class="fab fa-instagram  text-white"></i>
                 </a>
            </li>
@@ -985,20 +979,18 @@
        </ul>
     </div>
 
-
-
     <!-- MODAL PIN -->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Codigo de validacoón</h5>
+              <h5 class="modal-title" id="exampleModalLabel">¡Usted Ya se encuentra Registrado!</h5>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-               Señor usuario usted ya se encuentra registrado en el Plan Particular Especial, si desea actualizar
-               la información; al dar Aceptar le enviaremos un código de confirmación a su celular o correo 
-               electrónico registrado con nosotros.
+                Si desea actualizar su información o adicionar beneficiarios de clic en  “Aceptar". 
+                Enviaremos un código de confirmación a su celular o correo electrónico registrado con nosotros, 
+                el cual deberá ingresar en el campo " Código de verificación"
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
