@@ -4582,8 +4582,8 @@ footer {
 
 .scroll-up {
     position: fixed;
-    bottom: 10%;
-    right: 1%;
+    bottom: 1%;
+    left: 1%;
 }
 
 .whatsapp {
