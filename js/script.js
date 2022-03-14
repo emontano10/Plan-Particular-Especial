@@ -49,26 +49,29 @@ $('#ingresar').on('click', function() {
   if($ourteamSlider.length&&$.fn.slick){
     $ourteamSlider.slick({
       dots:true,
+      lazyLoad:'progressive',
       speed:1000,
       slidesToShow:4,
       slidesToScroll:4,
       arrows:false,
       autoplay:true,
+      adaptiveHeight: true,
       responsive:[{
-        breakpoint:1200,
+        breakpoint:1439,
         settings:{
-          slidesToShow:4,
-          slidesToScroll:4,
+          slidesToShow:3,
+          slidesToScroll:3,
           infinite:true,
           arrows:false
           ,dots:true,
         },
-        },{
+        },
+        {
           breakpoint:992,
           settings:{
             arrows:false,
-            slidesToShow:3,
-            slidesToScroll:3,
+            slidesToShow:2,
+            slidesToScroll:2,
           },
         },{breakpoint:768,
           settings:{
